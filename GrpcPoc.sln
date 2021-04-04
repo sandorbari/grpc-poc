@@ -5,6 +5,10 @@ VisualStudioVersion = 16.0.30907.101
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GrpcPoc", "GrpcPoc\GrpcPoc.csproj", "{992A6173-C4C6-42F0-8D89-A50F7B2E8DDA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GrpcPocClient", "GrpcPocClient\GrpcPocClient.csproj", "{6D337196-CA6A-4BFA-957F-A5F138553227}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GrpcPocServer", "GrpcPocServer\GrpcPocServer.csproj", "{BDFAF6C6-4CC4-4EF1-9A49-DE831370E9D7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{992A6173-C4C6-42F0-8D89-A50F7B2E8DDA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{992A6173-C4C6-42F0-8D89-A50F7B2E8DDA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{992A6173-C4C6-42F0-8D89-A50F7B2E8DDA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6D337196-CA6A-4BFA-957F-A5F138553227}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6D337196-CA6A-4BFA-957F-A5F138553227}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6D337196-CA6A-4BFA-957F-A5F138553227}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6D337196-CA6A-4BFA-957F-A5F138553227}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BDFAF6C6-4CC4-4EF1-9A49-DE831370E9D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BDFAF6C6-4CC4-4EF1-9A49-DE831370E9D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BDFAF6C6-4CC4-4EF1-9A49-DE831370E9D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BDFAF6C6-4CC4-4EF1-9A49-DE831370E9D7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
