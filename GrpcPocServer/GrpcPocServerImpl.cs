@@ -13,5 +13,18 @@ namespace GrpcPocServer
                 Sum = request.LeftOperand + request.RightOperand
             });
         }
+
+        public override async Task<ResultResponse> MultiplySeries(IAsyncStreamReader<MultiplicationRequest> requestStream, ServerCallContext context)
+        {
+            var result = 1;
+
+            while(await requestStream.MoveNext())
+            {
+                var multiplicand = requestStream.Current;
+                result *= multiplicand.Multiplicand;
+            }
+
+            return new ResultResponse() { Result = result };
+        }
     }
 }

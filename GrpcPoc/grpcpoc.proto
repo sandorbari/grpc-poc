@@ -4,6 +4,7 @@ package grpcpoc;
 
 service GrpcPoc {
 	rpc Add(AdderRequest) returns (AdderResponse) {}
+	rpc MultiplySeries(stream MultiplicationRequest) returns (ResultResponse) {}
 }
 
 message AdderRequest {
@@ -15,4 +16,11 @@ message AdderResponse {
 	int32 sum = 1; //ignoring potential overflow issues in POC 
 }
 
+message MultiplicationRequest {
+	int32 multiplicand = 1;
+}
+
+message ResultResponse {
+	int32 result = 1;
+}
 
