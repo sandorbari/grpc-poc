@@ -1,0 +1,18 @@
+﻿syntax = "proto3";
+
+package grpcpoc;
+
+service GrpcPoc {
+	rpc Add(AdderRequest) returns (AdderResponse) {}
+}
+
+message AdderRequest {
+	int32 leftOperand = 1;
+	int32 rightOperand = 2;
+}
+
+message AdderResponse {
+	int32 sum = 1; //ignoring potential overflow issues in POC 
+}
+
+

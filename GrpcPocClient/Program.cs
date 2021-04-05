@@ -1,4 +1,6 @@
 ﻿using System;
+using Grpc.Core;
+using Grpcpoc;
 
 namespace GrpcPocClient
 {
@@ -6,6 +8,7 @@ namespace GrpcPocClient
     {
         static void Main(string[] args)
         {
+            
             Console.WriteLine("Hello World!");
         }
     }
