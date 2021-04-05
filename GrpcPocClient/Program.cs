@@ -8,8 +8,22 @@ namespace GrpcPocClient
     {
         static void Main(string[] args)
         {
-            
-            Console.WriteLine("Hello World!");
+
+            Channel channel = new Channel("localhost:12345", ChannelCredentials.Insecure);
+
+            var pocClient = new GrpcPoc.GrpcPocClient(channel);
+            var addRequest = new AdderRequest() { LeftOperand = 1, RightOperand = 2 };
+
+            Console.WriteLine("Invoking the adder server");
+            var response = pocClient.Add(addRequest);
+
+            Console.WriteLine($"The sum is: {response.Sum}");
+
+            Console.WriteLine("Shutting client down");
+            channel.ShutdownAsync().Wait();
+
+            Console.WriteLine("Press any key to exit");
+            Console.ReadKey();
         }
     }
 }
